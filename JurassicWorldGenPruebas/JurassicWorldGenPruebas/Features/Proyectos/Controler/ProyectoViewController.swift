@@ -70,25 +70,4 @@ extension ProyectoViewController: UITableViewDelegate, UITableViewDataSource{
     
 }
 
-extension ProyectoViewController: ProyectoDetailDelegate{
-    func onDelete(genomaEspecie: String?) {
-        guard let  deletedGenomaEspecie = genomaEspecie else {
-            return
-        }
-        
-        removeAll(genomaEspecie:deletedGenomaEspecie)
-        
-        
-        ProyectoTableView.reloadData()
-    }
-    func removeAll(genomaEspecie: String) {
-        var count: Int = 0
-        for genoma in defaultGenomas {
-            if(genoma.especie == genomaEspecie){
-                defaultGenomas.remove(at: count)
-            }
-            count += 1
-        }
-        
-    }
-}
+
