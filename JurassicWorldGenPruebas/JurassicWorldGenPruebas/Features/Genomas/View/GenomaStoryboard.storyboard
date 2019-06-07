@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e0e-NW-z3n">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GenomaNavigationControler-->
+        <scene sceneID="pER-fr-sAx">
+            <objects>
+                <navigationController storyboardIdentifier="GenomaNavigationControler" id="e0e-NW-z3n" userLabel="GenomaNavigationControler" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Genomas" image="helice" selectedImage="helice" id="OVI-s5-vPq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="56d-UH-PYR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vOY-3e-QhF" kind="relationship" relationship="rootViewController" id="5VP-tz-Mje"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIp-j1-ObI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1406" y="60"/>
+        </scene>
+        <!--GenomaViewController-->
+        <scene sceneID="mIo-db-5Wf">
+            <objects>
+                <viewController id="vOY-3e-QhF" userLabel="GenomaViewController" customClass="GenomaViewController" customModule="JurassicWorldGenPruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JNf-no-NKK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vjl-6N-OIO" userLabel="GenomaTableView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GenomaViewCell" rowHeight="180" id="dgo-aR-0IO" userLabel="GenomaViewCell" customClass="GenomaViewCell" customModule="JurassicWorldGenPruebas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dgo-aR-0IO" id="tKA-Ud-Nc9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQ3-CE-He2" userLabel="GenView">
+                                                    <rect key="frame" x="21" y="0.0" width="346" height="180"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adnAlargado" translatesAutoresizingMaskIntoConstraints="NO" id="2RG-mh-VM1">
+                                                            <rect key="frame" x="0.0" y="8" width="361" height="53"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Especie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-90-f4J">
+                                                            <rect key="frame" x="8" y="75" width="179" height="29"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBt-wI-Iwb">
+                                                            <rect key="frame" x="8" y="120" width="247" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.73180387335547659" green="1" blue="0.97635703380792638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="zBt-wI-Iwb" secondAttribute="bottom" constant="39" id="0wf-dW-XYw"/>
+                                                        <constraint firstItem="zBt-wI-Iwb" firstAttribute="top" secondItem="OtI-90-f4J" secondAttribute="bottom" constant="16" id="5R3-Ga-UWm"/>
+                                                        <constraint firstAttribute="trailing" secondItem="OtI-90-f4J" secondAttribute="trailing" constant="159" id="7LJ-D3-Ds0"/>
+                                                        <constraint firstItem="2RG-mh-VM1" firstAttribute="top" secondItem="vQ3-CE-He2" secondAttribute="top" constant="8" id="IE9-gB-tb6"/>
+                                                        <constraint firstItem="OtI-90-f4J" firstAttribute="top" secondItem="2RG-mh-VM1" secondAttribute="bottom" constant="14" id="JoP-5F-Uz2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="zBt-wI-Iwb" secondAttribute="trailing" constant="91" id="RUN-oe-w7M"/>
+                                                        <constraint firstItem="OtI-90-f4J" firstAttribute="leading" secondItem="vQ3-CE-He2" secondAttribute="leading" constant="8" id="Tt0-aj-K9U"/>
+                                                        <constraint firstItem="zBt-wI-Iwb" firstAttribute="top" secondItem="OtI-90-f4J" secondAttribute="bottom" constant="16" id="WgL-y3-Y40"/>
+                                                        <constraint firstItem="2RG-mh-VM1" firstAttribute="leading" secondItem="vQ3-CE-He2" secondAttribute="leading" id="fXG-sG-fqy"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2RG-mh-VM1" secondAttribute="trailing" constant="-15" id="im0-P2-AJo"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2RG-mh-VM1" secondAttribute="bottom" constant="119" id="qxH-VF-f6Q"/>
+                                                        <constraint firstItem="zBt-wI-Iwb" firstAttribute="leading" secondItem="vQ3-CE-He2" secondAttribute="leading" constant="8" id="zZ8-Js-00E"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vQ3-CE-He2" firstAttribute="top" secondItem="tKA-Ud-Nc9" secondAttribute="top" id="RLH-K1-9rh"/>
+                                                <constraint firstItem="vQ3-CE-He2" firstAttribute="leading" secondItem="tKA-Ud-Nc9" secondAttribute="leading" constant="21" id="TwZ-c5-MvF"/>
+                                                <constraint firstAttribute="trailing" secondItem="vQ3-CE-He2" secondAttribute="trailing" constant="8" id="YSF-A5-2V4"/>
+                                                <constraint firstAttribute="bottom" secondItem="vQ3-CE-He2" secondAttribute="bottom" constant="-0.5" id="aai-OW-fdG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="Especie" destination="OtI-90-f4J" id="uMV-ez-FKB"/>
+                                            <outlet property="GenView" destination="vQ3-CE-He2" id="a8T-jT-2bI"/>
+                                            <outlet property="Tipo" destination="zBt-wI-Iwb" id="9Uc-n7-b7I"/>
+                                            <outlet property="adnAlargado" destination="2RG-mh-VM1" id="w2i-aE-jDc"/>
+                                            <segue destination="CJz-dA-rUy" kind="show" id="y5b-Ml-b6S"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ivg-Rt-SIl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="haG-gg-t2z"/>
+                    <connections>
+                        <outlet property="GenTableView" destination="Vjl-6N-OIO" id="ou9-49-Ywb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcx-nJ-vgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596" y="59.820089955022496"/>
+        </scene>
+        <!--GenomaDetailViewController-->
+        <scene sceneID="jeE-bp-tZQ">
+            <objects>
+                <viewController id="CJz-dA-rUy" userLabel="GenomaDetailViewController" customClass="GenomaDetailViewController" customModule="JurassicWorldGenPruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="caj-pi-meH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GenomaEspecie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZi-Dk-V1B" userLabel="GenomaEspecie">
+                                <rect key="frame" x="16" y="98" width="343" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WLM-kw-YkC" userLabel="GenomaDatos_Especie">
+                                <rect key="frame" x="50" y="212" width="282" height="259"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GenomaTipo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5O-Zo-eOi">
+                                <rect key="frame" x="40" y="161" width="277" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zgY-iw-qJi" firstAttribute="bottom" secondItem="e5O-Zo-eOi" secondAttribute="bottom" constant="436" id="6rH-Wg-d8V"/>
+                            <constraint firstItem="WLM-kw-YkC" firstAttribute="top" secondItem="e5O-Zo-eOi" secondAttribute="bottom" constant="30" id="8MO-9y-2p1"/>
+                            <constraint firstItem="zgY-iw-qJi" firstAttribute="bottom" secondItem="WLM-kw-YkC" secondAttribute="bottom" constant="147" id="93p-gL-BxP"/>
+                            <constraint firstItem="WLM-kw-YkC" firstAttribute="leading" secondItem="zgY-iw-qJi" secondAttribute="leading" constant="50" id="Mp7-Vo-2SC"/>
+                            <constraint firstItem="zgY-iw-qJi" firstAttribute="trailing" secondItem="fZi-Dk-V1B" secondAttribute="trailing" constant="16" id="YL9-iZ-kgz"/>
+                            <constraint firstItem="zgY-iw-qJi" firstAttribute="trailing" secondItem="WLM-kw-YkC" secondAttribute="trailing" constant="43" id="bXU-g6-FHx"/>
+                            <constraint firstItem="e5O-Zo-eOi" firstAttribute="leading" secondItem="zgY-iw-qJi" secondAttribute="leading" constant="40" id="es7-9F-okw"/>
+                            <constraint firstItem="fZi-Dk-V1B" firstAttribute="leading" secondItem="zgY-iw-qJi" secondAttribute="leading" constant="16" id="gQL-I1-4CT"/>
+                            <constraint firstItem="e5O-Zo-eOi" firstAttribute="top" secondItem="fZi-Dk-V1B" secondAttribute="bottom" constant="19" id="gb4-aj-9sb"/>
+                            <constraint firstItem="zgY-iw-qJi" firstAttribute="trailing" secondItem="e5O-Zo-eOi" secondAttribute="trailing" constant="58" id="pou-Ke-sB3"/>
+                            <constraint firstItem="fZi-Dk-V1B" firstAttribute="top" secondItem="zgY-iw-qJi" secondAttribute="top" constant="34" id="qd6-wY-fZr"/>
+                            <constraint firstItem="zgY-iw-qJi" firstAttribute="bottom" secondItem="fZi-Dk-V1B" secondAttribute="bottom" constant="476" id="rQ8-bY-ugp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zgY-iw-qJi"/>
+                    </view>
+                    <connections>
+                        <outlet property="GenomaDatos_Especie" destination="WLM-kw-YkC" id="5Zt-zX-r7a"/>
+                        <outlet property="GenomaEspecie" destination="fZi-Dk-V1B" id="w0h-91-mJa"/>
+                        <outlet property="GenomaTipo" destination="e5O-Zo-eOi" id="Ug0-vy-U2H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdx-ln-Xdy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="62.518740629685162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="adnAlargado" width="767" height="116"/>
+        <image name="helice" width="40" height="40"/>
+    </resources>
+</document>

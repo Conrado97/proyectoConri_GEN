@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4412176722A95DC700FCDB1E /* ProyectoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4412176622A95DC700FCDB1E /* ProyectoViewCell.swift */; };
+		4412176922A95DE000FCDB1E /* ProyectoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4412176822A95DE000FCDB1E /* ProyectoViewController.swift */; };
+		4412176B22A95DF900FCDB1E /* ProyectoDetailViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4412176A22A95DF900FCDB1E /* ProyectoDetailViewControler.swift */; };
+		4457F73222A8F75000F84305 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457F73122A8F75000F84305 /* SampleData.swift */; };
+		4457F73422A8FB8500F84305 /* GenomaDetailViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457F73322A8FB8500F84305 /* GenomaDetailViewControler.swift */; };
+		4457F73822A9074000F84305 /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457F73722A9074000F84305 /* TableViewCellExtension.swift */; };
+		4457F73A22A92E3600F84305 /* ModificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457F73922A92E3600F84305 /* ModificacionesViewController.swift */; };
+		4457F73C22A92E5000F84305 /* Modificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457F73B22A92E5000F84305 /* Modificacion.swift */; };
+		4457F73E22A9305100F84305 /* Trabajador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457F73D22A9305100F84305 /* Trabajador.swift */; };
+		4457F74022A9326800F84305 /* Proyecto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457F73F22A9326800F84305 /* Proyecto.swift */; };
+		446DB72422AAA26200BE0546 /* TrabajadorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DB72322AAA26200BE0546 /* TrabajadorViewCell.swift */; };
+		446DB72622AAA8E500BE0546 /* TrabajadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DB72522AAA8E500BE0546 /* TrabajadorViewController.swift */; };
+		446DB72822AAA90100BE0546 /* TrabajadorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DB72722AAA90100BE0546 /* TrabajadorDetailViewController.swift */; };
+		446DB72D22AAAF8900BE0546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446DB72C22AAAF8900BE0546 /* Assets.xcassets */; };
+		447E0872228D6ECE007FE97F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E0871228D6ECE007FE97F /* AppDelegate.swift */; };
+		447E087C228D6ECF007FE97F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447E087A228D6ECF007FE97F /* LaunchScreen.storyboard */; };
+		447E0887228D6ECF007FE97F /* JurassicWorldGenPruebasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E0886228D6ECF007FE97F /* JurassicWorldGenPruebasTests.swift */; };
+		447E0892228D6ECF007FE97F /* JurassicWorldGenPruebasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E0891228D6ECF007FE97F /* JurassicWorldGenPruebasUITests.swift */; };
+		447E08B7228D87C0007FE97F /* LaunchJurassicWorldGenetics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447E08B6228D87C0007FE97F /* LaunchJurassicWorldGenetics.storyboard */; };
+		4488D1FE229D3CA2009E7D0B /* GenomaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488D1FD229D3CA2009E7D0B /* GenomaViewCell.swift */; };
+		4488D201229D4211009E7D0B /* Genoma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488D200229D4211009E7D0B /* Genoma.swift */; };
+		449D2EE922969DD100B2859B /* GenomaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D2EE822969DD100B2859B /* GenomaViewController.swift */; };
+		44A0AA772292AA9600F10FDC /* MainTabBarControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A0AA762292AA9600F10FDC /* MainTabBarControler.swift */; };
+		44A0AAB32292B85600F10FDC /* GenomaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A0AAB22292B85600F10FDC /* GenomaStoryboard.storyboard */; };
+		44A0AAB52292BC2300F10FDC /* ModificacionesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A0AAB42292BC2300F10FDC /* ModificacionesStoryboard.storyboard */; };
+		44A0AAB72292BE5800F10FDC /* ProyectosStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A0AAB62292BE5800F10FDC /* ProyectosStoryboard.storyboard */; };
+		44A0AAB92292C32C00F10FDC /* TrabajadoresStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A0AAB82292C32C00F10FDC /* TrabajadoresStoryboard.storyboard */; };
+		44A0AABB2292C49400F10FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A0AABA2292C49400F10FDC /* Main.storyboard */; };
+		44D7471A22AAC24A000217A8 /* ModificacionesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D7471922AAC24A000217A8 /* ModificacionesViewCell.swift */; };
+		44D7471C22AAC272000217A8 /* ModificacionesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D7471B22AAC272000217A8 /* ModificacionesDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		447E0883228D6ECF007FE97F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 447E0866228D6ECE007FE97F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 447E086D228D6ECE007FE97F;
+			remoteInfo = JurassicWorldGenPruebas;
+		};
+		447E088E228D6ECF007FE97F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 447E0866228D6ECE007FE97F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 447E086D228D6ECE007FE97F;
+			remoteInfo = JurassicWorldGenPruebas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4412176622A95DC700FCDB1E /* ProyectoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoViewCell.swift; sourceTree = "<group>"; };
+		4412176822A95DE000FCDB1E /* ProyectoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoViewController.swift; sourceTree = "<group>"; };
+		4412176A22A95DF900FCDB1E /* ProyectoDetailViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoDetailViewControler.swift; sourceTree = "<group>"; };
+		4457F73122A8F75000F84305 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		4457F73322A8FB8500F84305 /* GenomaDetailViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomaDetailViewControler.swift; sourceTree = "<group>"; };
+		4457F73722A9074000F84305 /* TableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
+		4457F73922A92E3600F84305 /* ModificacionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificacionesViewController.swift; sourceTree = "<group>"; };
+		4457F73B22A92E5000F84305 /* Modificacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modificacion.swift; sourceTree = "<group>"; };
+		4457F73D22A9305100F84305 /* Trabajador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trabajador.swift; sourceTree = "<group>"; };
+		4457F73F22A9326800F84305 /* Proyecto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proyecto.swift; sourceTree = "<group>"; };
+		446DB72322AAA26200BE0546 /* TrabajadorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrabajadorViewCell.swift; sourceTree = "<group>"; };
+		446DB72522AAA8E500BE0546 /* TrabajadorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrabajadorViewController.swift; sourceTree = "<group>"; };
+		446DB72722AAA90100BE0546 /* TrabajadorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrabajadorDetailViewController.swift; sourceTree = "<group>"; };
+		446DB72C22AAAF8900BE0546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		447E086E228D6ECE007FE97F /* JurassicWorldGenPruebas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JurassicWorldGenPruebas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		447E0871228D6ECE007FE97F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		447E087B228D6ECF007FE97F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		447E087D228D6ECF007FE97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447E0882228D6ECF007FE97F /* JurassicWorldGenPruebasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JurassicWorldGenPruebasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		447E0886228D6ECF007FE97F /* JurassicWorldGenPruebasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurassicWorldGenPruebasTests.swift; sourceTree = "<group>"; };
+		447E0888228D6ECF007FE97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447E088D228D6ECF007FE97F /* JurassicWorldGenPruebasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JurassicWorldGenPruebasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		447E0891228D6ECF007FE97F /* JurassicWorldGenPruebasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JurassicWorldGenPruebasUITests.swift; sourceTree = "<group>"; };
+		447E0893228D6ECF007FE97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447E08B6228D87C0007FE97F /* LaunchJurassicWorldGenetics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchJurassicWorldGenetics.storyboard; sourceTree = "<group>"; };
+		4488D1FD229D3CA2009E7D0B /* GenomaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomaViewCell.swift; sourceTree = "<group>"; };
+		4488D200229D4211009E7D0B /* Genoma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genoma.swift; sourceTree = "<group>"; };
+		449D2EE822969DD100B2859B /* GenomaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomaViewController.swift; sourceTree = "<group>"; };
+		44A0AA762292AA9600F10FDC /* MainTabBarControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarControler.swift; sourceTree = "<group>"; };
+		44A0AAB22292B85600F10FDC /* GenomaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GenomaStoryboard.storyboard; sourceTree = "<group>"; };
+		44A0AAB42292BC2300F10FDC /* ModificacionesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModificacionesStoryboard.storyboard; sourceTree = "<group>"; };
+		44A0AAB62292BE5800F10FDC /* ProyectosStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProyectosStoryboard.storyboard; sourceTree = "<group>"; };
+		44A0AAB82292C32C00F10FDC /* TrabajadoresStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrabajadoresStoryboard.storyboard; sourceTree = "<group>"; };
+		44A0AABA2292C49400F10FDC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		44D7471922AAC24A000217A8 /* ModificacionesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificacionesViewCell.swift; sourceTree = "<group>"; };
+		44D7471B22AAC272000217A8 /* ModificacionesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificacionesDetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		447E086B228D6ECE007FE97F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447E087F228D6ECF007FE97F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447E088A228D6ECF007FE97F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		447E0865228D6ECE007FE97F = {
+			isa = PBXGroup;
+			children = (
+				447E0870228D6ECE007FE97F /* JurassicWorldGenPruebas */,
+				447E0885228D6ECF007FE97F /* JurassicWorldGenPruebasTests */,
+				447E0890228D6ECF007FE97F /* JurassicWorldGenPruebasUITests */,
+				447E086F228D6ECE007FE97F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		447E086F228D6ECE007FE97F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				447E086E228D6ECE007FE97F /* JurassicWorldGenPruebas.app */,
+				447E0882228D6ECF007FE97F /* JurassicWorldGenPruebasTests.xctest */,
+				447E088D228D6ECF007FE97F /* JurassicWorldGenPruebasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		447E0870228D6ECE007FE97F /* JurassicWorldGenPruebas */ = {
+			isa = PBXGroup;
+			children = (
+				447E08AA228D81D7007FE97F /* Features */,
+				447E08A2228D6FCE007FE97F /* Data */,
+				447E08A1228D6FC3007FE97F /* Extensions */,
+				447E08A0228D6FB7007FE97F /* Resources */,
+				447E089F228D6FA8007FE97F /* App */,
+				447E0871228D6ECE007FE97F /* AppDelegate.swift */,
+				447E087A228D6ECF007FE97F /* LaunchScreen.storyboard */,
+				447E087D228D6ECF007FE97F /* Info.plist */,
+			);
+			path = JurassicWorldGenPruebas;
+			sourceTree = "<group>";
+		};
+		447E0885228D6ECF007FE97F /* JurassicWorldGenPruebasTests */ = {
+			isa = PBXGroup;
+			children = (
+				447E0886228D6ECF007FE97F /* JurassicWorldGenPruebasTests.swift */,
+				447E0888228D6ECF007FE97F /* Info.plist */,
+			);
+			path = JurassicWorldGenPruebasTests;
+			sourceTree = "<group>";
+		};
+		447E0890228D6ECF007FE97F /* JurassicWorldGenPruebasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				447E0891228D6ECF007FE97F /* JurassicWorldGenPruebasUITests.swift */,
+				447E0893228D6ECF007FE97F /* Info.plist */,
+			);
+			path = JurassicWorldGenPruebasUITests;
+			sourceTree = "<group>";
+		};
+		447E089F228D6FA8007FE97F /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		447E08A0228D6FB7007FE97F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				446DB72C22AAAF8900BE0546 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		447E08A1228D6FC3007FE97F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4457F73722A9074000F84305 /* TableViewCellExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		447E08A2228D6FCE007FE97F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4488D1FF229D41DD009E7D0B /* Models */,
+				447E08A9228D81CE007FE97F /* Samples */,
+				447E08A7228D812F007FE97F /* Local */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		447E08A7228D812F007FE97F /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		447E08A9228D81CE007FE97F /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				4457F73122A8F75000F84305 /* SampleData.swift */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		447E08AA228D81D7007FE97F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				447E08AB228D821B007FE97F /* Launch */,
+				447E08B0228D8425007FE97F /* Trabajadores */,
+				447E08AF228D8419007FE97F /* Proyectos */,
+				447E08AE228D83FE007FE97F /* Genomas */,
+				447E08AC228D8226007FE97F /* Home */,
+				447E08AD228D83E9007FE97F /* ModGen */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		447E08AB228D821B007FE97F /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				447E08B5228D876F007FE97F /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		447E08AC228D8226007FE97F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				447E08B9228D8844007FE97F /* Views */,
+				447E08B8228D882D007FE97F /* Controllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		447E08AD228D83E9007FE97F /* ModGen */ = {
+			isa = PBXGroup;
+			children = (
+				447E08C9228D921C007FE97F /* View */,
+				447E08C8228D9213007FE97F /* Controler */,
+			);
+			path = ModGen;
+			sourceTree = "<group>";
+		};
+		447E08AE228D83FE007FE97F /* Genomas */ = {
+			isa = PBXGroup;
+			children = (
+				447E08C7228D920B007FE97F /* View */,
+				447E08C6228D9202007FE97F /* Controler */,
+			);
+			path = Genomas;
+			sourceTree = "<group>";
+		};
+		447E08AF228D8419007FE97F /* Proyectos */ = {
+			isa = PBXGroup;
+			children = (
+				447E08C5228D91F5007FE97F /* View */,
+				447E08C4228D91EC007FE97F /* Controler */,
+			);
+			path = Proyectos;
+			sourceTree = "<group>";
+		};
+		447E08B0228D8425007FE97F /* Trabajadores */ = {
+			isa = PBXGroup;
+			children = (
+				447E08C3228D91E3007FE97F /* View */,
+				447E08C2228D91D3007FE97F /* Controler */,
+			);
+			path = Trabajadores;
+			sourceTree = "<group>";
+		};
+		447E08B5228D876F007FE97F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				447E08B6228D87C0007FE97F /* LaunchJurassicWorldGenetics.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		447E08B8228D882D007FE97F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44A0AA762292AA9600F10FDC /* MainTabBarControler.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		447E08B9228D8844007FE97F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44A0AABA2292C49400F10FDC /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		447E08C2228D91D3007FE97F /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				446DB72522AAA8E500BE0546 /* TrabajadorViewController.swift */,
+				446DB72722AAA90100BE0546 /* TrabajadorDetailViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		447E08C3228D91E3007FE97F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44A0AAB82292C32C00F10FDC /* TrabajadoresStoryboard.storyboard */,
+				446DB72322AAA26200BE0546 /* TrabajadorViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		447E08C4228D91EC007FE97F /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				4412176822A95DE000FCDB1E /* ProyectoViewController.swift */,
+				4412176A22A95DF900FCDB1E /* ProyectoDetailViewControler.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		447E08C5228D91F5007FE97F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44A0AAB62292BE5800F10FDC /* ProyectosStoryboard.storyboard */,
+				4412176622A95DC700FCDB1E /* ProyectoViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		447E08C6228D9202007FE97F /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				449D2EE822969DD100B2859B /* GenomaViewController.swift */,
+				4457F73322A8FB8500F84305 /* GenomaDetailViewControler.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		447E08C7228D920B007FE97F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4488D1FC229D3C86009E7D0B /* Cell */,
+				44A0AAB22292B85600F10FDC /* GenomaStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		447E08C8228D9213007FE97F /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				4457F73922A92E3600F84305 /* ModificacionesViewController.swift */,
+				44D7471B22AAC272000217A8 /* ModificacionesDetailsViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		447E08C9228D921C007FE97F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44A0AAB42292BC2300F10FDC /* ModificacionesStoryboard.storyboard */,
+				44D7471922AAC24A000217A8 /* ModificacionesViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4488D1FC229D3C86009E7D0B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4488D1FD229D3CA2009E7D0B /* GenomaViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4488D1FF229D41DD009E7D0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4488D200229D4211009E7D0B /* Genoma.swift */,
+				4457F73B22A92E5000F84305 /* Modificacion.swift */,
+				4457F73D22A9305100F84305 /* Trabajador.swift */,
+				4457F73F22A9326800F84305 /* Proyecto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		447E086D228D6ECE007FE97F /* JurassicWorldGenPruebas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447E0896228D6ECF007FE97F /* Build configuration list for PBXNativeTarget "JurassicWorldGenPruebas" */;
+			buildPhases = (
+				447E086A228D6ECE007FE97F /* Sources */,
+				447E086B228D6ECE007FE97F /* Frameworks */,
+				447E086C228D6ECE007FE97F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JurassicWorldGenPruebas;
+			productName = JurassicWorldGenPruebas;
+			productReference = 447E086E228D6ECE007FE97F /* JurassicWorldGenPruebas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		447E0881228D6ECF007FE97F /* JurassicWorldGenPruebasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447E0899228D6ECF007FE97F /* Build configuration list for PBXNativeTarget "JurassicWorldGenPruebasTests" */;
+			buildPhases = (
+				447E087E228D6ECF007FE97F /* Sources */,
+				447E087F228D6ECF007FE97F /* Frameworks */,
+				447E0880228D6ECF007FE97F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				447E0884228D6ECF007FE97F /* PBXTargetDependency */,
+			);
+			name = JurassicWorldGenPruebasTests;
+			productName = JurassicWorldGenPruebasTests;
+			productReference = 447E0882228D6ECF007FE97F /* JurassicWorldGenPruebasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		447E088C228D6ECF007FE97F /* JurassicWorldGenPruebasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447E089C228D6ECF007FE97F /* Build configuration list for PBXNativeTarget "JurassicWorldGenPruebasUITests" */;
+			buildPhases = (
+				447E0889228D6ECF007FE97F /* Sources */,
+				447E088A228D6ECF007FE97F /* Frameworks */,
+				447E088B228D6ECF007FE97F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				447E088F228D6ECF007FE97F /* PBXTargetDependency */,
+			);
+			name = JurassicWorldGenPruebasUITests;
+			productName = JurassicWorldGenPruebasUITests;
+			productReference = 447E088D228D6ECF007FE97F /* JurassicWorldGenPruebasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		447E0866228D6ECE007FE97F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "CONRADO DELSO GONZALEZ";
+				TargetAttributes = {
+					447E086D228D6ECE007FE97F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					447E0881228D6ECF007FE97F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 447E086D228D6ECE007FE97F;
+					};
+					447E088C228D6ECF007FE97F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 447E086D228D6ECE007FE97F;
+					};
+				};
+			};
+			buildConfigurationList = 447E0869228D6ECE007FE97F /* Build configuration list for PBXProject "JurassicWorldGenPruebas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 447E0865228D6ECE007FE97F;
+			productRefGroup = 447E086F228D6ECE007FE97F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				447E086D228D6ECE007FE97F /* JurassicWorldGenPruebas */,
+				447E0881228D6ECF007FE97F /* JurassicWorldGenPruebasTests */,
+				447E088C228D6ECF007FE97F /* JurassicWorldGenPruebasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		447E086C228D6ECE007FE97F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A0AAB72292BE5800F10FDC /* ProyectosStoryboard.storyboard in Resources */,
+				44A0AAB92292C32C00F10FDC /* TrabajadoresStoryboard.storyboard in Resources */,
+				447E087C228D6ECF007FE97F /* LaunchScreen.storyboard in Resources */,
+				44A0AABB2292C49400F10FDC /* Main.storyboard in Resources */,
+				447E08B7228D87C0007FE97F /* LaunchJurassicWorldGenetics.storyboard in Resources */,
+				44A0AAB32292B85600F10FDC /* GenomaStoryboard.storyboard in Resources */,
+				446DB72D22AAAF8900BE0546 /* Assets.xcassets in Resources */,
+				44A0AAB52292BC2300F10FDC /* ModificacionesStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447E0880228D6ECF007FE97F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447E088B228D6ECF007FE97F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		447E086A228D6ECE007FE97F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447E0872228D6ECE007FE97F /* AppDelegate.swift in Sources */,
+				4457F73222A8F75000F84305 /* SampleData.swift in Sources */,
+				44D7471C22AAC272000217A8 /* ModificacionesDetailsViewController.swift in Sources */,
+				4457F73E22A9305100F84305 /* Trabajador.swift in Sources */,
+				446DB72822AAA90100BE0546 /* TrabajadorDetailViewController.swift in Sources */,
+				4412176922A95DE000FCDB1E /* ProyectoViewController.swift in Sources */,
+				4457F73822A9074000F84305 /* TableViewCellExtension.swift in Sources */,
+				4457F73A22A92E3600F84305 /* ModificacionesViewController.swift in Sources */,
+				4488D1FE229D3CA2009E7D0B /* GenomaViewCell.swift in Sources */,
+				44A0AA772292AA9600F10FDC /* MainTabBarControler.swift in Sources */,
+				446DB72622AAA8E500BE0546 /* TrabajadorViewController.swift in Sources */,
+				446DB72422AAA26200BE0546 /* TrabajadorViewCell.swift in Sources */,
+				4488D201229D4211009E7D0B /* Genoma.swift in Sources */,
+				4412176B22A95DF900FCDB1E /* ProyectoDetailViewControler.swift in Sources */,
+				449D2EE922969DD100B2859B /* GenomaViewController.swift in Sources */,
+				44D7471A22AAC24A000217A8 /* ModificacionesViewCell.swift in Sources */,
+				4457F73C22A92E5000F84305 /* Modificacion.swift in Sources */,
+				4412176722A95DC700FCDB1E /* ProyectoViewCell.swift in Sources */,
+				4457F74022A9326800F84305 /* Proyecto.swift in Sources */,
+				4457F73422A8FB8500F84305 /* GenomaDetailViewControler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447E087E228D6ECF007FE97F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447E0887228D6ECF007FE97F /* JurassicWorldGenPruebasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447E0889228D6ECF007FE97F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447E0892228D6ECF007FE97F /* JurassicWorldGenPruebasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		447E0884228D6ECF007FE97F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 447E086D228D6ECE007FE97F /* JurassicWorldGenPruebas */;
+			targetProxy = 447E0883228D6ECF007FE97F /* PBXContainerItemProxy */;
+		};
+		447E088F228D6ECF007FE97F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 447E086D228D6ECE007FE97F /* JurassicWorldGenPruebas */;
+			targetProxy = 447E088E228D6ECF007FE97F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		447E087A228D6ECF007FE97F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				447E087B228D6ECF007FE97F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		447E0894228D6ECF007FE97F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		447E0895228D6ECF007FE97F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		447E0897228D6ECF007FE97F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JurassicWorldGenPruebas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CONRImarinero.JurassicWorldGenPruebas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		447E0898228D6ECF007FE97F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JurassicWorldGenPruebas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CONRImarinero.JurassicWorldGenPruebas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		447E089A228D6ECF007FE97F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JurassicWorldGenPruebasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CONRImarinero.JurassicWorldGenPruebasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JurassicWorldGenPruebas.app/JurassicWorldGenPruebas";
+			};
+			name = Debug;
+		};
+		447E089B228D6ECF007FE97F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JurassicWorldGenPruebasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CONRImarinero.JurassicWorldGenPruebasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JurassicWorldGenPruebas.app/JurassicWorldGenPruebas";
+			};
+			name = Release;
+		};
+		447E089D228D6ECF007FE97F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JurassicWorldGenPruebasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CONRImarinero.JurassicWorldGenPruebasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JurassicWorldGenPruebas;
+			};
+			name = Debug;
+		};
+		447E089E228D6ECF007FE97F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JurassicWorldGenPruebasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CONRImarinero.JurassicWorldGenPruebasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JurassicWorldGenPruebas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		447E0869228D6ECE007FE97F /* Build configuration list for PBXProject "JurassicWorldGenPruebas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447E0894228D6ECF007FE97F /* Debug */,
+				447E0895228D6ECF007FE97F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		447E0896228D6ECF007FE97F /* Build configuration list for PBXNativeTarget "JurassicWorldGenPruebas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447E0897228D6ECF007FE97F /* Debug */,
+				447E0898228D6ECF007FE97F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		447E0899228D6ECF007FE97F /* Build configuration list for PBXNativeTarget "JurassicWorldGenPruebasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447E089A228D6ECF007FE97F /* Debug */,
+				447E089B228D6ECF007FE97F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		447E089C228D6ECF007FE97F /* Build configuration list for PBXNativeTarget "JurassicWorldGenPruebasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447E089D228D6ECF007FE97F /* Debug */,
+				447E089E228D6ECF007FE97F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 447E0866228D6ECE007FE97F /* Project object */;
+}
